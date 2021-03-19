@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Veterinaria ADSI</title>
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
@@ -16,18 +16,23 @@
         <header class="cabezera">
             <nav class="encab">
                 <div class="logo">
-                    <img src="" alt="">
+                    <img src="img/veterinario.png" alt="">
                     <h3>Veterinaria</h3>
                 </div>
 
                 <div class="opciones">
                     <ul>
-                        <li><a href="index.php">Inicio</a></li>
-                        <li><a href="#">Iniciar Sesion</a></li>
+                        <li><a href="index.php"><b>Inicio</b></a></li>
+                        <li><a href="login.php"><b>Iniciar Sesion</b></a></li>
                     </ul>
                 </div>
             </nav>
         </header>
+    </div>
+
+    <div class="container">
+        <h1 class="titulo">Bienvenido.</h1>
+        <p class="frase">Ser veterinario no es sólo cuidar a los animales, es ante todo respetar la vida de todos los que habitamos en este mundo y dignificar su existencia.</p>
     </div>
     
     
