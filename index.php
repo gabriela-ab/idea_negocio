@@ -11,10 +11,25 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <h1>Automatizacion en la veterinaria</h1>
-    <p>si funciona o que carajos</p>
-    <a href="#">continuemos</a>
-    <a href="#">listo</a>
+    <div>
+        <!--encabezado-->
+        <header class="cabezera">
+            <nav class="encab">
+                <div class="logo">
+                    <img src="" alt="">
+                    <h3>Veterinaria</h3>
+                </div>
+
+                <div class="opciones">
+                    <ul>
+                        <li><a href="index.php">Inicio</a></li>
+                        <li><a href="#">Iniciar Sesion</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+    
     
 </body>
 </html>
