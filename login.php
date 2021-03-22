@@ -12,7 +12,7 @@
 <body> 
     <div  class="boxing">
         <form action="inicio.php" method="POST">
-            <img class="logotipo " src="animalitos.jpg" alt="">
+            <img class="logotipo " src="img/animalitos 2(3).png" alt="">
             <h1 class="login">LOGIN USER </h1>
             
             <input type="text" class="jhon" id="usuario" name="usuario" placeholder="Ingrese su usuario" required>
