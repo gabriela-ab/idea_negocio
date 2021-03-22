@@ -25,7 +25,7 @@ require_once('conexion/conexion.php');
 <body>
 
     <div>
-        <form action="php/registro.php" method="post">
+        <form action="php/registro.php" method="POST">
             <img src="img/veterinario.png" alt="">
             <h1 class="login">Registrarse</h1>
             <select name="tipo_docu" id="tipo_docu" required>
