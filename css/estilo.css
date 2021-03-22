@@ -8,7 +8,7 @@
     body
     {
     font-family: 'Times New Roman', Times, serif;
-    background-image:url(../img/animalitos\ 2.1.png) ;
+    background-image:url(../img/fondo_reg.jpeg) ;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100vw 100vh;
@@ -18,9 +18,7 @@
     {
     width: 320px;
     height: 450px;
-    background: #002e91;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #dd5b10f5, #910049);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #916914c7, #862b10e3);
+    background: rgba(0, 0, 0, .5);
     color: #fff;
     left: 40%;
     margin-top: 130px;

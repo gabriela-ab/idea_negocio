@@ -1,15 +1,15 @@
 <?php
-session_start();
-require_once("conexion.php");
+
+require_once("../conexion/conexion.php");
 if($_POST["boton"]){
 
 
     $usuario = $_POST["usuario"];
-    $_password =$_POST ["clave"];
+    $password =$_POST ["clave"];
 
-    $con = "select * from usuario where usuario = '$usuario' and clave = '$_password'";
-    $query = mysqli_query($mysqli,$con);
-    $fila = (mysqli_fetch_assoc($query));
+    $con = "SELECT * from usuario where usuario = '$usuario' and clave = '$password'";
+    $query = mysqli_query($conexion,$con);
+    $fila = mysqli_fetch_assoc($query);
     if($fila)
     {
 
@@ -19,20 +19,24 @@ if($_POST["boton"]){
             $_SESSION['apellidos'] = $fila['apellidos'];
             $_SESSION['usuario'] = $fila['usuario'];
             $_SESSION['clave'] = $fila['clave'];
+            $_SESSION['telefono'] = $fila['telefono'];
+            $_SESSION['email'] = $fila['email'];
+            $_SESSION['tipo_docu'] = $fila['id_tip_docu'];
 
 
         if($_SESSION['tip_usu'] == 1){
-            header ("location:administrador/administrador.php");
-            exit();
-        }elseif($_SESSION['tip_usu'] == 2)
-        {
-            header ("location:usuario/usuario.php");
+        
+            header("location: ../administrador/administrador.php");
             exit();
         }
-    }else 
-    {
-        echo('no se pudo conectar');
-        exit();
+        if($_SESSION['tip_usu'] == 2){
+            header("location: ../usuario/usuario.php");
+            exit();
+        }
+    }
+    else{
+        echo "<script> alert('Este usuario NO se encuentra registrado.')</script>";
+        echo '<script> window.location="../login.php" </script>'; 
 
     }
 }
