@@ -10,12 +10,10 @@
     <title>Iniciar Sesion</title>
 </head>
 <body>
-
-        <label class="logo"><img src="img/fondo1.jpg" height=50px width="50px" alt=""></label>
         
     <div  class="boxing">
         <form action="php/inicio.php" method="POST" autocomplete="off">
-            <img class="logotipo " src="img/animalitos.jpg" alt="">
+            <img class="logotipo " src="img/veterinario.png" alt="">
             <h1 class="login">LOGIN USER </h1>
             
             <input type="text" class="jhon" id="usuario" name="usuario" placeholder="Ingrese su usuario" required>
