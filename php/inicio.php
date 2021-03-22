@@ -22,11 +22,11 @@ if($_POST["boton"]){
 
 
         if($_SESSION['tip_usu'] == 1){
-            header ("location:administrador.php");
+            header ("location:administrador/administrador.php");
             exit();
         }elseif($_SESSION['tip_usu'] == 2)
         {
-            header ("location:usuario.php");
+            header ("location:usuario/usuario.php");
             exit();
         }
     }else 

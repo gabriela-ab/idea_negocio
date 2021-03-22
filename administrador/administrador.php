@@ -1,5 +1,5 @@
 <?php
-require_once('conexion.php');
+require_once('../conexion/conexion.php');
 
 echo('TODO ESTA BIEN');
 
