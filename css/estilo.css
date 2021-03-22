@@ -8,7 +8,11 @@
     body
     {
     font-family: 'Times New Roman', Times, serif;
+<<<<<<< HEAD
     background-image:url('/img/animalitos2.1.png') ;
+=======
+    background-image:url(../img/animalitos\ 2\ \(3\).png) ;
+>>>>>>> ef1d4b1a5a9b22dd3fd3da0b23e64c8ebc2945fe
     background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
