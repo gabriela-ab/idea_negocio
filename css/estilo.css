@@ -42,7 +42,7 @@
     width: 115px;
     height: 115px;
     position: absolute;
-    top: 5px;
+    top: 10px;
     left: calc(50% - 50px);
    }
     h1.login
@@ -57,7 +57,7 @@
     }
     input.jhon{
     padding: 8px;
-     margin-top: 20px;
+    margin-top: 20px;
     border-radius: 10px;
     background-color: rgba(49, 38, 37, 0.486);
     color: rgb(255, 253, 250);

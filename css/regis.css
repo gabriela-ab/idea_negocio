@@ -4,3 +4,74 @@ body{
     background-attachment: fixed;
     background-size: 100vw 100vh;
 }
+.formulario{
+    font-size: 15px;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 35%;
+    padding: 5px;
+    transform: translate(-50% -50%);
+    box-sizing: border-box;
+}
+form{
+    color: #fff;
+    align-content: center;
+    background: rgba(0, 0, 0, .5);
+    width: 500px;
+    border-radius: 10px;
+    height: 600px;
+}
+.regis{
+   padding: 10px; 
+
+}
+.formulario img{
+    width: 115px;
+    height: 115px;
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 50px);
+}
+h1{
+    margin-left: 40px;
+    margin-top: 25%;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+input{
+    margin: 20px;
+    padding: 8px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: rgba(49, 38, 37, 0.486);
+    color: rgb(255, 253, 250); 
+}
+.docu{
+    margin-left: 35px;
+}
+select{
+    margin-left: 30px;
+    font-size: 15px;
+    padding: 8px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: rgba(49, 38, 37, 0.486);
+    color: rgb(255, 253, 250); 
+}
+.enviar{
+    margin-left: 75px;
+    padding: 8px;
+    margin-top: 25px;
+    border-radius: 10px;
+    width: 120px;
+    font-size: 15px;
+    cursor: pointer;
+    background: #5e2503; /* fallback for old browsers */
+    background: #3d4437;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #48f442, #443737);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f44242af, #d11d26c0); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */     
+}
+
