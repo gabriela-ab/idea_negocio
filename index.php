@@ -23,7 +23,7 @@
                 <div class="opciones">
                     <ul>
                         <li><a href="index.php"><b>Inicio</b></a></li>
-                        <li><a href="login.html"><b>Iniciar Sesion</b></a></li>
+                        <li><a href="login.php"><b>Iniciar Sesion</b></a></li>
                     </ul>
                 </div>
             </nav>
