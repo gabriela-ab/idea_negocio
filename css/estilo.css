@@ -8,143 +8,30 @@
     body
     {
     font-family: 'Times New Roman', Times, serif;
-<<<<<<< HEAD
+
+
     background-image:url('/img/animalitos2.1.png') ;
-=======
-    background-image:url(../img/animalitos\ 2\ \(3\).png) ;
->>>>>>> ef1d4b1a5a9b22dd3fd3da0b23e64c8ebc2945fe
+
+    background-image:url(../img/animalitos\ 2\ \(3\).png);
+
+
+    background-image:url(../img/animalitos\ 2.1.png) ;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    width: 100%;
-    }
+    background-size: 100vw 100vh;
     
-    nav 
-    {
-    background-color: rgba(131, 67, 7, 0.808);
-    height: 100px;
-    width: 100%;
-    }
-    label.logo
-    {
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 100px;
-    font-weight: bold;
-    }
-    label img
-    {
-    margin-top: 10px;  
-    width: 100px;
-    height: 100px;
-    }
-    nav ul 
-    {
-    float: right;
-    margin: 20px;
-    border-color: #f8f2f2;
-    }
-    nav ul li
-    {
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-    }
-    nav ul li a
-    {
-    color: #f5f5f5;
-    font-size: 20px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform:uppercase ;
-    }
-    a.active,a:hover
-    {
-    background:  rgb(178, 54, 32) ;
-    transition: .5s;
-    width:10px;
-    }
-     
-    .icono
-    {
-    float: right;
-    cursor: pointer;
-    display: flex;
-    height: 70px;
-    padding: 20px;
-    z-index: 100;
-    color: #ffffff;
-    border: black;
-    background: #913500;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ffb578, #913500);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ff9e78, #912900); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-      }s
-      
-    .enlaces
-    {
-    display: flex;
-    height: 100%;
-    width: 30%;
-    justify-content: space-around;
-    align-items: center;
-    }
-    .enlaces a
-    {
-    border-top: 1px solid transparent;
-    border-bottom: apx solid transparent;
-    padding: 10px 50px;
-    transition: 0.7s ease-out;
-    color: #fefffe;
-    text-decoration: none;
-    border-radius: 2px;
-    flex-direction: column;
-         
-    }
-    .enlaces a:hover,.active
-    {
-    border-top: 1px solid rgb(236, 236, 236);
-    border-bottom: apx solid rgb(241, 240, 239);
-    }
-    @keyframes fade 
-    {
-    from { opacity: .4;}
-    to{opacity: 1;}  
-    }
-    .enlaces
-    {
-    position: fixed;
-    height: 100vh;
-    right: 0;
-    top: 0%;
-    width: 100%;
-    flex-direction:column ;
-    transition:all 1s ease ;
-    background: #f7f5f4;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #ec0b0b, #913500);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #ff9378, #913500); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    }
-    .uno
-    {
-    clip-path: circle(1% at 100% 0%  );
-         
-    }
-    .dos
-    {
-    clip-path: circle(150% at 100% 0%  );
-           
     }
     .boxing
     {
     width: 320px;
-    height: 500px;
+    height: 450px;
     background: #002e91;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #dd5b10f5, #910049);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #916914c7, #862b10e3);
     color: #fff;
-    top: 50%;
-    left: 50%;
-    margin-top: 400px;
+    left: 40%;
+    margin-top: 130px;
     position: relative;
-    transform: translate(-50%, -50%);
     box-sizing: border-box;
     padding: 70px 30px;
     border-radius:10%;
@@ -163,13 +50,13 @@
    {
     width: 115px;
     height: 115px;
-    border-radius: 200%;
     position: absolute;
-    top: -0px;
+    top: 5px;
     left: calc(50% - 50px);
    }
     h1.login
     {
+    padding-top: 10px;
     margin: 1px;
     margin-top: 25%;
     text-align: center;

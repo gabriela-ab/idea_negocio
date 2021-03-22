@@ -9,17 +9,18 @@
     <link rel="stylesheet" href="css/estilo.css">
     <title>Iniciar Sesion</title>
 </head>
-<body> 
+<body>
+        
     <div  class="boxing">
-        <form action="inicio.php" method="POST">
-            <img class="logotipo " src="img/animalitos 2(3).png" alt="">
+        <form action="php/inicio.php" method="POST" autocomplete="off">
+            <img class="logotipo " src="img/veterinario.png" alt="">
             <h1 class="login">LOGIN USER </h1>
             
             <input type="text" class="jhon" id="usuario" name="usuario" placeholder="Ingrese su usuario" required>
             <input type="password" class="jhon" id="clave" name="clave" placeholder="Ingrese su contraseña" required>
             <input type="submit" class="boto" id="boton" name="boton" value="Enviar" placeholder="Enviar">
             <a href="" class="contra">Olvido su contraseña</a>
-            <a href="" class="contra">Registrarse</a>
+            <a href="" class="contra">registrarse</a>
         </form>
         
     </div>
