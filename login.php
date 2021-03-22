@@ -14,13 +14,12 @@
     <div  class="boxing">
         <form action="php/inicio.php" method="POST" autocomplete="off">
             <img class="logotipo " src="img/veterinario.png" alt="">
-            <h1 class="login">LOGIN USER </h1>
+            <h1 class="login">Iniciar Sesion</h1>
             
             <input type="text" class="jhon" id="usuario" name="usuario" placeholder="Ingrese su usuario" required>
             <input type="password" class="jhon" id="clave" name="clave" placeholder="Ingrese su contraseña" required>
-            <input type="submit" class="boto" id="boton" name="boton" value="Enviar" placeholder="Enviar">
-            <a href="" class="contra">Olvido su contraseña</a>
-            <a href="" class="contra">registrarse</a>
+            <input type="submit" class="boto" id="boton" name="boton" value="Enviar">
+            <a href="regis.php" class="contra">Registrarse</a>
         </form>
         
     </div>
