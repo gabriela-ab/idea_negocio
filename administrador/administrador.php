@@ -11,20 +11,29 @@ echo('TODO ESTA BIEN');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="shortcut icon" href="" type="image/x-icon">
+    
+    <link rel="stylesheet" href="../css/stylo_admin.css">
     <link rel="stylesheet" href="../css/admin.css">
 </head>
 <body>
-<nav >
-        <label class="logo"><img src="img/fondo1.jpg" height=50px width="50px" alt=""></label>
-        <ul>
-            <li><a href="login.html"></a>INICIO</li>
-            <li><a class="actitud" href=""></a>NOSOTROS</li>
-            <li><a href=""></a>CONTACTENOS</li>
-            <li><a href="" id="registrarse" name="registrarse"></a>REGISTRARSE</li>
-            
-        </ul>
-   </nav>  
+<div class="container1">
+                <h1> </h1>
+                <h2>ADMINISTRADOR</h2>
+            <figure>
+                <img src="../img/veterinario.png" alt="logo de la pagina">
+            </figure>
+</div>
+    <div>
+                    <div class="menu">
+                        <ul >
+                            <li><a href="#"></a>INICIO</a></li>
+                            <li><a href=""></a>CONTROL</li>
+                            <li><a href=""></a>MASCOTAS</li>
+                            <li><a href=""></a>USUARIOS</li>
+                            <li><a href=""></a>INVENTARIO</li>
+                        </ul>
+                    </div>
+     </div>
    <h1 class="saludo">BIEN VENIDO</h1>
   
 </body>
