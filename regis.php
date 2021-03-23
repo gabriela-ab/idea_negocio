@@ -8,7 +8,7 @@ require_once('conexion/conexion.php');
     $fila1 = mysqli_fetch_assoc($query1);
 ?>
 <?php
-    $sql2 = "SELECT * FROM tipo_usuario";
+    $sql2 = "SELECT * FROM tipo_usuario WHERE id_tip_usu >= 2";
     $query2 = mysqli_query($conexion,$sql2);
     $fila2 = mysqli_fetch_assoc($query2);
 ?>
