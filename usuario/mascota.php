@@ -1,10 +1,5 @@
 <?php
 require_once('../conexion/conexion.php');
-    $documento = $_GET['documento'];
-
-    $sqldocu = "SELECT * FROM mascota where documento = '$documento'";
-    $querydocu = mysqli_query($conexion,$sqldocu);
-    $filadocu = mysqli_fetch_assoc($querydocu);
 
 ?>
 <?php
@@ -32,7 +27,7 @@ require_once('../conexion/conexion.php');
 <body>
 
     <div class="formulario">
-        <form action="" method="POST">
+        <form action="regis-mas.php" method="POST" autocomplete="off">
             <input type="number" name="codigo" id="codigo" placeholder="Digita codigo mascota" required>
             <input type="text" name="nombre" id="nombre" placeholder="Digita el nombre" required>
             <select name="tipo_mas" id="tipo_mas" required>
@@ -61,8 +56,9 @@ require_once('../conexion/conexion.php');
                 endforeach;
                 ?>
             </select>
+            <input type="text" name="documento" id="documento" placeholder="Digita documento del dueño" required>
             <input type="submit" name="registrar" id="registrar" value="Registrar">
-            <input type="hidden" name="documento" id="documento" value="<?php echo($fila_docu['documento'])?>">
+            
         </form>
     </div>
     

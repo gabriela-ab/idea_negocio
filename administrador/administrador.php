@@ -25,10 +25,10 @@ require_once('../conexion/conexion.php');
                     <div class="menu">
                         <ul >
                             <li><a href="administrador.php"></a>INICIO</a></li>
-                            <li><a href=""></a>CONTROL</li>
-                            <li><a href=""></a>MASCOTAS</li>
-                            <li><a href=""></a>USUARIOS</li>
-                            <li><a href=""></a>INVENTARIO</li>
+                            <li><a href="">CONTROL</a></li>
+                            <li><a href="">MASCOTAS</a></li>
+                            <li><a href="">USUARIOS</a></li>
+                            <li><a href="">INVENTARIO</a></li>
                             <li><a href="../php/salir.php">salir</a></li>
                         </ul>
                        

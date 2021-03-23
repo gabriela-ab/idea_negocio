@@ -26,11 +26,11 @@ require_once('../conexion/conexion.php');
     <div>
                     <div class="menu">
                         <ul >
-                            <li><a href="usuario.php"></a>INICIO</a></li>
-                            <li><a href="mascota.php"></a>REGISTRAR MASCOTA</li>
-                            <li><a href=""></a>COMPRAR MEDICAMENTO</li>
-                            <li><a href=""></a>USUARIOS</li>
-                            <li><a href=""></a>INVENTARIO</li>
+                            <li><a href="usuario.php">INICIO</a></li>
+                            <li><a href="mascota.php">REGISTRAR MASCOTA</a></li>
+                            <li><a href="">COMPRAR MEDICAMENTO</a></li>
+                            <!-- <li><a href=""></a>USUARIOS</li>
+                            <li><a href=""></a>INVENTARIO</li> -->
                             <li><a href="../php/salir.php">salir</a></li>
                         </ul>
                         
