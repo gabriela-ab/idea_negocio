@@ -12,7 +12,7 @@ echo('TODO ESTA BIEN');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="shortcut icon" href="img/fondo1.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="css/stilo_usuar.css">
+    <link rel="stylesheet" href="../css/usu.css">
 </head>
 <body>
 <nav >
