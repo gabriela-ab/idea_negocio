@@ -30,8 +30,7 @@ require_once('../conexion/conexion.php');
         <div class="menu">
             <ul>
                 <li><a href="administrador.php"></a>INICIO</a></li>
-                <li><a href="control.php">CONTROL</a></li>
-                <li><a href="">MASCOTAS</a></li>
+                <li><a href="mascotas.php">MASCOTAS</a></li>
                 <li><a href="">USUARIOS</a></li>
                 <li><a href="">INVENTARIO</a></li>
                 <li><a href="../php/salir.php"><img witdh="40px" height="50px" src="../img/cerrar-sesion.png" alt=""></a></li>

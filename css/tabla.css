@@ -1,0 +1,48 @@
+html{
+    box-sizing: border-box;
+    font-size: 15px;
+}
+*, 
+*::after , 
+*::before{
+    box-sizing: inherit;
+}
+body{
+    background: url(../img/fondoc.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.mascotas{
+    padding: 20px;
+    margin: 10px;
+    border: thin solid #000000;
+    border-collapse: collapse;
+    width: 100%;
+    text-align: center;
+}
+.tabla td{
+    font-family: 'Times New Roman', Times, serif;
+    border: thin solid #000000;
+    margin: 30px;
+    width: auto;
+}
+.principal{
+    padding: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+a{
+    /* border: none; */
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(9, 138, 58);
+    cursor: pointer;
+    outline: 0;
+}
+a:hover{
+    color: rgb(141, 172, 31);
+}
