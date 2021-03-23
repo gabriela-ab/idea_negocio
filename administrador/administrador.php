@@ -1,6 +1,12 @@
 <?php
 require_once('../conexion/conexion.php');
 
+    $consulta_admin = "SELECT * FROM usuario, tipo_usuario WHERE usuario = '".$_SESSION['usuario']."' and usuario.id_tip_usu = tipo_usuario.id_tip_usu";
+    $query_admin = mysqli_query($conexion, $consulta_admin);
+    $fila_admin = mysqli_fetch_assoc($query_admin);
+    $_SESSION['documento'] = $fila_admin['documento'];
+    $_SESSION['usuario'] = $fila_admin['usuario'];
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -24,7 +30,7 @@ require_once('../conexion/conexion.php');
         <div class="menu">
             <ul>
                 <li><a href="administrador.php"></a>INICIO</a></li>
-                <li><a href="">CONTROL</a></li>
+                <li><a href="control.php">CONTROL</a></li>
                 <li><a href="">MASCOTAS</a></li>
                 <li><a href="">USUARIOS</a></li>
                 <li><a href="">INVENTARIO</a></li>

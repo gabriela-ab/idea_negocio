@@ -2,7 +2,11 @@
 
 require_once('../conexion/conexion.php');
 
-
+    $consulta_usu = "SELECT * FROM usuario, tipo_usuario WHERE usuario = '".$_SESSION['usuario']."' and usuario.id_tip_usu = tipo_usuario.id_tip_usu";
+    $query_usu = mysqli_query($conexion, $consulta_usu);
+    $fila_usu = mysqli_fetch_assoc($query_usu);
+    $_SESSION['documento'] = $fila_usu['documento'];
+    $_SESSION['usuario'] = $fila_usu['usuario'];
 ?>
 <!DOCTYPE html>
 <html lang="en">

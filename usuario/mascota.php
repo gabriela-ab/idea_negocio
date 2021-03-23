@@ -1,6 +1,11 @@
 <?php
 require_once('../conexion/conexion.php');
 
+    $consulta_usu = "SELECT * FROM usuario, tipo_usuario WHERE usuario = '".$_SESSION['usuario']."' and usuario.id_tip_usu = tipo_usuario.id_tip_usu";
+    $queryusu = mysqli_query($conexion,$consulta_usu);
+    $filausu = mysqli_fetch_assoc($queryusu);
+    $_SESSION['documento'] = $filausu['documento'];
+
 ?>
 <?php
 
@@ -15,6 +20,7 @@ require_once('../conexion/conexion.php');
     $queryge = mysqli_query($conexion,$sqlge);
     $filage = mysqli_fetch_assoc($queryge);
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -31,7 +37,7 @@ require_once('../conexion/conexion.php');
         <form action="regis-mas.php" method="POST" autocomplete="off">
             <h1 class="titulo">Registrar mascota</h1>
             <div class="regis">
-                <input type="number" name="codigo" id="codigo" placeholder="Digita codigo mascota" required>
+                <input type="hidden" name="codigo" id="codigo" placeholder="Digita codigo mascota" required>
                 <input type="text" name="nombre" id="nombre" placeholder="Digita el nombre" required>
                 <select class="mascota" name="tipo_mas" id="tipo_mas" required>
                     <option value="">Elije tipo mascota</option>
@@ -59,7 +65,7 @@ require_once('../conexion/conexion.php');
                     endforeach;
                     ?>
                 </select>
-                <input type="text" name="documento" id="documento" placeholder="Digita documento del dueño" required>
+                <input type="hidden" name="documento" id="documento" class="documento" value="<?php echo($filausu['documento'])?>">
                 <input type="submit" class="enviar" name="registrar" id="registrar" value="Registrar">
                 
             </div>
