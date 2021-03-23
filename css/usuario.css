@@ -40,8 +40,6 @@ figure img{
     
 }
 
-
-
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -73,3 +71,7 @@ ul{
     cursor: pointer;
    background-color:#39b2e2a1;
  }
+
+a{
+    text-decoration: none;
+}
