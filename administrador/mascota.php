@@ -1,5 +1,10 @@
 <?php
 require_once('../conexion/conexion.php');
+    $documento = $_GET['documento'];
+
+    $sqldocu = "SELECT * FROM mascota where documento = '$documento'";
+    $querydocu = mysqli_query($conexion,$sqldocu);
+    $filadocu = mysqli_fetch_assoc($querydocu);
 
 ?>
 <?php
@@ -56,7 +61,8 @@ require_once('../conexion/conexion.php');
                 endforeach;
                 ?>
             </select>
-
+            <input type="submit" name="registrar" id="registrar" value="Registrar">
+            <input type="hidden" name="documento" id="documento" value="<?php echo($fila_docu['documento'])?>">
         </form>
     </div>
     
