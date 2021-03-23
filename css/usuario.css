@@ -63,7 +63,6 @@ ul{
     display: inline block;
     padding: 20px 60px  ;
     height: 40px;
-    color: rgb(10, 10, 10);
     margin-top:-1px;
     font-size: 20px;
  }
@@ -81,6 +80,7 @@ a{
  }
 
 a{
+    color:black;
     text-decoration: none;
 }
 >>>>>>> a6aa78d0920e7bb581c11f3ae5aac65a333d9a1c
