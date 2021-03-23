@@ -41,13 +41,13 @@ require_once('conexion/conexion.php');
                     endforeach;
                     ?>
                 </select>
-                <input type="text" name="documento" id="documento" class="docu" placeholder="Digite su documento" required>
+                <input type="number" name="documento" id="documento" class="docu" placeholder="Digite su documento" required>
                 <input type="text" name="nombres" id="nombres" placeholder="Digite su nombres" required>
                 <input type="text" name="apellidos" id="apellidos" placeholder="Digite su apellidos" required>
                 <input type="text" name="usuario" id="usuario" placeholder="Digite su usuario" required>
-                <input type="text" name="clave" id="clave" placeholder="Digite su contraseña" required>
-                <input type="text" name="telefono" id="telefono" placeholder="Digite su telefono" required>
-                <input type="text" name="email" id="email" placeholder="Digite su email" required>
+                <input type="number" name="clave" id="clave" placeholder="Digite su contraseña" required>
+                <input type="number" name="telefono" id="telefono" placeholder="Digite su telefono" required>
+                <input type="email" name="email" id="email" placeholder="Digite su email" required>
                 
                 <select name="tipo_usu" id="tipo_usu" required>
                     <option value="">Elije tipo usuario</option>
