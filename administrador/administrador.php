@@ -1,8 +1,6 @@
 <?php
 require_once('../conexion/conexion.php');
 
-echo('TODO ESTA BIEN');
-
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,10 +8,10 @@ echo('TODO ESTA BIEN');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Menu | Administrador</title>
     
     <link rel="stylesheet" href="../css/stylo_admin.css">
-    <link rel="stylesheet" href="../css/admin.css">
+    
 </head>
 <body>
 <div class="container1">
@@ -26,15 +24,17 @@ echo('TODO ESTA BIEN');
     <div>
                     <div class="menu">
                         <ul >
-                            <li><a href="#"></a>INICIO</a></li>
+                            <li><a href="administrador.php"></a>INICIO</a></li>
                             <li><a href=""></a>CONTROL</li>
                             <li><a href=""></a>MASCOTAS</li>
                             <li><a href=""></a>USUARIOS</li>
                             <li><a href=""></a>INVENTARIO</li>
+                            <li><a href="../php/salir.php">salir</a></li>
                         </ul>
+                       
                     </div>
      </div>
-   <h1 class="saludo">BIEN VENIDO</h1>
+   <h1 class="saludo">BIENVENIDO</h1>
   
 </body>
 </html>

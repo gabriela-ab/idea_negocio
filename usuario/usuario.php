@@ -2,7 +2,7 @@
 
 require_once('../conexion/conexion.php');
 
-echo('TODO ESTA BIEN');
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -10,20 +10,33 @@ echo('TODO ESTA BIEN');
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="shortcut icon" href="img/fondo1.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="../css/usu.css">
+    <title>Menu | Usuario</title>
+    
+    <link rel="stylesheet" href="../css/usuario.css">
+    
 </head>
 <body>
-<nav >
-<label class="logo"><img src="img/fondo1.jpg" height=50px width="50px" alt=""></label>
-        <ul>
-            <li><a href="login.html"></a>INICIO</li>
-            <li><a class="actitud" href=""></a>NOSOTROS</li>
-            <li><a href=""></a>CONTACTENOS</li>
-            <li><a href="" id="registrarse" name="registrarse"></a>REGISTRARSE</li>
-            
-        </ul>
-   </nav>  
+<div class="container1">
+                <h1> </h1>
+                <h2>USUARIO</h2>
+            <figure>
+                <img src="../img/veterinario.png" alt="logo de la pagina">
+            </figure>
+</div>
+    <div>
+                    <div class="menu">
+                        <ul >
+                            <li><a href="usuario.php"></a>INICIO</a></li>
+                            <li><a href="mascota.php"></a>REGISTRAR MASCOTA</li>
+                            <li><a href=""></a>COMPRAR MEDICAMENTO</li>
+                            <li><a href=""></a>USUARIOS</li>
+                            <li><a href=""></a>INVENTARIO</li>
+                            <li><a href="../php/salir.php">salir</a></li>
+                        </ul>
+                        
+                    </div>
+     </div>
+   <h1 class="saludo">BIENVENIDO</h1>
+  
 </body>
 </html>
