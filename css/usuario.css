@@ -40,8 +40,6 @@ figure img{
     
 }
 
-
-
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -72,9 +70,17 @@ ul{
  li:hover{
     cursor: pointer;
    background-color:#39b2e2a1;
+<<<<<<< HEAD
  
 }
 a{
     color: #000;
 }
  
+=======
+ }
+
+a{
+    text-decoration: none;
+}
+>>>>>>> a6aa78d0920e7bb581c11f3ae5aac65a333d9a1c

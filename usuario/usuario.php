@@ -29,8 +29,7 @@ require_once('../conexion/conexion.php');
                             <li><a href="usuario.php">INICIO</a></li>
                             <li><a href="mascota.php">REGISTRAR MASCOTA</a></li>
                             <li><a href="">COMPRAR MEDICAMENTO</a></li>
-                            <!-- <li><a href=""></a>USUARIOS</li>
-                            <li><a href=""></a>INVENTARIO</li> -->
+                            <li><a href="">CONTROL DE MASCOTA</a></li>
                             <li><a href="../php/salir.php">salir</a></li>
                         </ul>
                         

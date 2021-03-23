@@ -74,5 +74,9 @@ ul{
    background-color:#39b2e2a1;
  }
  a{
+<<<<<<< HEAD
      color: #0000;
+=======
+     text-decoration: none;
+>>>>>>> a6aa78d0920e7bb581c11f3ae5aac65a333d9a1c
  }
