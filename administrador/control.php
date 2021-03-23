@@ -28,8 +28,9 @@ require_once('../conexion/conexion.php');
 </head>
 <body>
     <div class="formul">
-        <form action="" method="POST">
-            <select name="tipo_docu" id="tipo_docu" required>
+        <form action="for-con.php" method="POST" autocomplete="off">
+        <input type="hidden" name="cod_control" id="cod_control" placeholder="Digita codigo control" required>
+            <select name="tipo_control" id="tipo_control" required>
                 <option value="">Elije tipo de control</option>
                 <?php
 
@@ -43,11 +44,13 @@ require_once('../conexion/conexion.php');
             </select>
 
             <input type="hidden" name="codigo" id="codigo" class="codigo" value="<?php echo($fila_codigo['codigo'])?>">
+
             <input type="text" name="descripcion" id="descripcion" placeholder="Descripcion del control" required>
             <input type="text" name="peso" id="peso" placeholder="Digite el peso en kg" required>
             <input type="text" name="altura" id="altura" placeholder="Digite la altura en cm" required>
             <input type="text" name="observaciones" id="observaciones" placeholder="Observaciones del control" required>
-            <input type="datetime-local" name="fecha" id="fecha">
+            <!-- <input type="datetime-local" name="fecha" id="fecha"> -->
+
             <input type="submit" name="enviar" id="enviar" value="Enviar">
         </form>
     </div>
