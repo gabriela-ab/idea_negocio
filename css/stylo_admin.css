@@ -1,13 +1,10 @@
 body{
-    background-image: url(../img/fondo-acuarela.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100vw 100vh;
+    background-image: url('../img/fondo_veteri.png');
     
 }
 body div{
     margin-top: 0px;
-    height: 80px;
+    height: 100px;
     position: relative;
     width: 100%;
     bottom: 0px;
@@ -32,7 +29,7 @@ figure img{
     position: relative;
     border: black;
     bottom: 99px;
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 .menu{
@@ -77,6 +74,9 @@ ul{
    background-color:#39b2e2a1;
  }
  a{
-    color: black;
-    text-decoration: none;
+<<<<<<< HEAD
+     color: #0000;
+=======
+     text-decoration: none;
+>>>>>>> a6aa78d0920e7bb581c11f3ae5aac65a333d9a1c
  }
