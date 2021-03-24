@@ -4,7 +4,7 @@ require_once('../conexion/conexion.php');
 if(isset($_POST["enviar"])){
     $id_control=$_POST['cod_control'];
     $control=$_POST['tipo_control'];
-    $codigo=$_POST['codigo'];
+    $codigo=$_POST['codigo_dog'];
     $descripcion=$_POST['descripcion'];
     $peso=$_POST['peso'];
     $altura=$_POST['altura'];

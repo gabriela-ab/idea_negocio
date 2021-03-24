@@ -27,7 +27,6 @@
     					<td>codigo</td>
     					<td>nombres</td>
     					<td>cantidad</td>
-    					<td></td>
     					
     				</tr>
 

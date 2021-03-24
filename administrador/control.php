@@ -7,11 +7,6 @@ require_once('../conexion/conexion.php');
     $fila = mysqli_fetch_assoc($query);
 
 ?>
-<?php
-    $sql_codigo = "SELECT * FROM mascota";
-    $query_codigo = mysqli_query($conexion,$sql_codigo);
-    $fila_codigo = mysqli_fetch_assoc($query_codigo);
-?>
 
 <?php
     $sqlcon = "SELECT * FROM tipo_control";
@@ -48,7 +43,7 @@ require_once('../conexion/conexion.php');
                     ?>
                 </select>
 
-                <input type="hidden" name="codigo" id="codigo" class="codigo" value="<?php echo($fila_codigo['codigo'])?>">
+                <input type="hidden" name="codigo_dog" id="codigo_dog" class="codigo" value="<?php echo($fila['codigo'])?>">
 
                 <input type="text" name="descripcion" id="descripcion" placeholder="Descripcion del control" required>
                 <input type="text" name="peso" id="peso" placeholder="Digite el peso en kg" required>
