@@ -29,7 +29,7 @@ require_once('../conexion/conexion.php');
 <body>
     <div class="formul">
         <form action="for-con.php" method="POST" autocomplete="off">
-        <input type="hidden" name="cod_control" id="cod_control" placeholder="Digita codigo control" required>
+            <input type="hidden" name="cod_control" id="cod_control" placeholder="Digita codigo control" required>
             <select name="tipo_control" id="tipo_control" required>
                 <option value="">Elije tipo de control</option>
                 <?php
@@ -49,11 +49,10 @@ require_once('../conexion/conexion.php');
             <input type="text" name="peso" id="peso" placeholder="Digite el peso en kg" required>
             <input type="text" name="altura" id="altura" placeholder="Digite la altura en cm" required>
             <input type="text" name="observaciones" id="observaciones" placeholder="Observaciones del control" required>
-            <!-- <input type="datetime-local" name="fecha" id="fecha"> -->
 
             <input type="submit" name="enviar" id="enviar" value="Enviar">
         </form>
-    </div>
+    </div>        
     
 </body>
 </html>
