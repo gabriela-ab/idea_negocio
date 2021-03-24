@@ -1,11 +1,13 @@
 <?php
 $ahora = time();
-$limite = strtotime("+10 day", $ahora);
+$limite = strtotime($ahora);
 
-$ahora_spa = date("d-m-Y H:i:s", $ahora);
-$limite_spa = date("d-m-Y H:i:s", $limite);
+$a = date("m",$ahora);
+$d = date("d",$ahora);
 
-echo ' '.$ahora_spa;
+
+
+echo ($a);
 echo '<hr />';
-echo ' '.$limite_spa;
+echo ($d);
 ?>

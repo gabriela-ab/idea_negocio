@@ -18,6 +18,7 @@ require_once('../conexion/conexion.php');
     $querycon = mysqli_query($conexion,$sqlcon);
     $filacon = mysqli_fetch_assoc($querycon);
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
