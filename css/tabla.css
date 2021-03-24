@@ -8,7 +8,7 @@ html{
     box-sizing: inherit;
 }
 body{
-    background: url(../img/fondoc.jpg);
+    background: url(../img/color.jpg);
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -27,22 +27,23 @@ body{
 .tabla td{
     font-family: 'Times New Roman', Times, serif;
     border: thin solid #000000;
-    margin: 30px;
+    margin: 50px;
     width: auto;
+    font-size: 18px;
 }
 .principal{
     padding: 10px;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: bold;
 }
 a{
     /* border: none; */
     text-decoration: none;
     font-family: 'Times New Roman', Times, serif;
-    color: rgb(9, 138, 58);
+    color: #d60b2de7;
     cursor: pointer;
     outline: 0;
 }
 a:hover{
-    color: rgb(141, 172, 31);
+    color: #0b75d8b9;
 }

@@ -41,7 +41,7 @@ require_once('../conexion/conexion.php');
                     echo '<td>' . $contenido["edad"] .'</td>';
                     echo '<td>' . $contenido["genero"] .'</td>';
                     echo '<td>' . $contenido["nombres"] .'</td>';
-                    echo '<td>' . "<a href='control.php?codigo=$codigo'>" . "<p> Realizar control </p>" . '</a>' . '</td>';
+                    echo '<td>' . "<a href='control.php?codigo=$codigo'>" . "<p> <b> Realizar control </b> </p>" . '</a>' . '</td>';
                     echo "</tr>";
                 }
                 

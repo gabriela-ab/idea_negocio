@@ -45,7 +45,7 @@ require_once('conexion/conexion.php');
                 <input type="text" name="nombres" id="nombres" placeholder="Digite su nombres" required>
                 <input type="text" name="apellidos" id="apellidos" placeholder="Digite su apellidos" required>
                 <input type="text" name="usuario" id="usuario" placeholder="Digite su usuario" required>
-                <input type="number" name="clave" id="clave" placeholder="Digite su contraseña" required>
+                <input type="password" name="clave" id="clave" placeholder="Digite su contraseña" required>
                 <input type="number" name="telefono" id="telefono" placeholder="Digite su telefono" required>
                 <input type="email" name="email" id="email" placeholder="Digite su email" required>
                 
