@@ -1,0 +1,74 @@
+body{
+    background-image: url(../img/fondoproduc.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
+}
+.formulario{
+    font-size: 17px;
+    display: flex;
+    position: absolute;
+    top: 80px;
+    left: 35%;
+    padding: 40px;
+    transform: translate(-50% -50%);
+    box-sizing: border-box;
+}
+form{
+    width: 350px;
+    border-radius: 10px;
+    height: 350px;
+    background: rgba(0, 0, 0, .5);
+}
+
+
+h1{
+    padding: 8px;
+    font-family: 'Times New Roman';
+    color: #fff;
+    text-align: center;
+    margin-left: 5px;
+}
+input{
+    font-size: 16px;
+    width: 80%;
+    height: 40px;
+    padding: 5px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    margin-top: 25px;
+    border-radius: 5px;
+    background-color: rgba(49, 38, 37, 0.486);
+    color: rgb(255, 253, 250); 
+}
+
+select{
+    font-size: 16px;
+    width: 80%;
+    height: 40px;
+    padding: 5px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    margin-top: 25px;
+    border-radius: 5px;
+    background-color: rgba(49, 38, 37, 0.486);
+    color: rgb(255, 253, 250); 
+    
+}
+
+.enviar{
+    margin-left: 110px;
+    padding: 8px;
+    margin-top: 25px;
+    border-radius: 10px;
+    width: 120px;
+    font-size: 15px;
+    cursor: pointer;
+    color: #fff;
+    background: #006eff5e;
+}
+.enviar:hover{
+    transform: translatey(1px);
+    background: #543799;
+    color: #000;
+}

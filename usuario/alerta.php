@@ -29,28 +29,34 @@ require_once('../conexion/conexion.php');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mensaje alerta</title>
+    <link rel="stylesheet" href="../css/alerta.css">
 </head>
 <body>
+
+    <div class="formulario">
+        <form action="con-alerta.php" method="POST">
+            <h1>Ver control de mascota</h1>
+            <select name="documento" id="documento" required>
+                <option value="">Elije</option>
+                <?php
+
+                    foreach ($querydoc as $documento) : ?>
+
+                <option value="<?php echo $documento['documento'] ?> ">
+                    <?php echo $documento['nombres'] ?></option>
+                <?php
+                    endforeach;
+                ?>
+            </select>
+            <input type="hidden" name="codigo" id="codigo" value="<?php echo($filamas['codigo'])?>">
+            <input type="submit" class="enviar" name="comprobar" value="Ver control">
+            
+        </form>
+
+    </div>
     
 
-   <form action="con-alerta.php" method="POST">
-       <h1>Ver control de mascota</h1>
-        <select name="documento" id="documento" required>
-            <option value="">Elije</option>
-            <?php
-
-                foreach ($querydoc as $documento) : ?>
-
-            <option value="<?php echo $documento['documento'] ?> ">
-                <?php echo $documento['nombres'] ?></option>
-            <?php
-                endforeach;
-            ?>
-        </select>
-        <input type="hidden" name="codigo" id="codigo" value="<?php echo($filamas['codigo'])?>">
-        <input type="submit" name="comprobar" value="Ver control">
-        
-   </form>
+   
     
    
 

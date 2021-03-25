@@ -22,29 +22,33 @@ require_once('../conexion/conexion.php');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Compra de productos</title>
+    <link rel="stylesheet" href="../css/compra.css">
 </head>
 <body>
-    <form action="for-com.php" method="POST">
-        <h1>Compra de productos</h1>
-        <input type="hidden" name="cod_compra" id="cod_compra" placeholder="Digita codigo control" required>
+    <div class="formulario">
+        <form action="for-com.php" method="POST">
+            <h1>Compra de productos</h1>
+            <input type="hidden" name="cod_compra" id="cod_compra" placeholder="Digita codigo control" required>
 
-        <select name="producto" id="producto" required>
-            <option value="">Elije el producto</option>
-            <?php
+            <select name="producto" id="producto" required>
+                <option value="">Elije el producto</option>
+                <?php
 
-                foreach ($query1 as $producto) : ?>
+                    foreach ($query1 as $producto) : ?>
 
-            <option value="<?php echo $producto['cod_produc'] ?> ">
-                <?php echo $producto['nom_produc'] ?></option>
-            <?php
-                endforeach;
-            ?>
-        </select>
-        <input type="hidden" name="documento" id="documento" class="documento" value="<?php echo($fila_usu['documento'])?>">
+                <option value="<?php echo $producto['cod_produc'] ?> ">
+                    <?php echo $producto['nom_produc'] ?></option>
+                <?php
+                    endforeach;
+                ?>
+            </select>
+            <input type="hidden" name="documento" id="documento" class="documento" value="<?php echo($fila_usu['documento'])?>">
 
-        <input type="text" name="cantidad" id="cantidad" placeholder="Digita la cantidad" required>
-        <input type="submit" name="enviar" id="enviar" value="Enviar">
-    </form>
+            <input type="text" name="cantidad" id="cantidad" placeholder="Digita la cantidad" required>
+            <input type="submit" class="enviar" name="enviar" id="enviar" value="Enviar">
+        </form>
+    </div>
+    
     
 </body>
 </html>
