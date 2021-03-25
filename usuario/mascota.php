@@ -35,7 +35,7 @@ require_once('../conexion/conexion.php');
 
     <div class="formulario">
         <form action="regis-mas.php" method="POST" autocomplete="off">
-            <img class="logotipo " src="../img/veterinario.png" alt="">
+        <img class="logotipo " src="../img/veterinario.png" alt="">
             <h1 class="titulo">Registrar mascota</h1>
             <div class="regis">
                 <input type="hidden" name="codigo" id="codigo" placeholder="Digita codigo mascota" required>
