@@ -25,6 +25,7 @@
             echo "<script> alert('Se guardaron los datos exitosamente.')</script>";
             echo '<script> window.location="usuario.php" </script>';
         }
+        
     }
     
 ?>
