@@ -15,7 +15,8 @@
 
     if (isset($_POST['consulta'])) {
     	$q = $conn->real_escape_string($_POST['consulta']);
-    	$query = "SELECT * FROM usuario WHERE documento LIKE '%$q%' OR nombres LIKE '%$q%' OR apellidos LIKE '%$q%' OR usuario LIKE '%$q%' OR clave LIKE '%$q%' OR telefono LIKE '%$q%' OR email LIKE '%$q%'  ";
+    	$query = "SELECT * FROM usuario,tipo_documento,tipo_usuario WHERE documento LIKE '%$q%' OR nombres LIKE '%$q%' OR apellidos LIKE '%$q%' OR usuario LIKE '%$q%' OR clave LIKE '%$q%' OR telefono LIKE '%$q%' OR email LIKE '%$q%' OR  usuario.id_tip_docu = tipo_documento.id_tip_docu LIKE '%$q%'
+       OR usuario.id_tip_usu = tipo_usuario.id_tip_usu LIKE '%$q%'";
     }
 
     $resultado = $conn->query($query);
@@ -51,7 +52,7 @@
               <td>".$fila['telefono']."</td>
               <td>".$fila['email']."</td>
               <td>".$fila['id_tip_docu']."</td>
-              <td>".$fila['id_tip_docu']."</td>
+              <td>".$fila['id_tip_usu']."</td>
               
     					
     				</tr>";
