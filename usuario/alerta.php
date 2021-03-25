@@ -17,7 +17,7 @@ require_once('../conexion/conexion.php');
 ?>
 
 <?php 
-    $consulta_mas = "SELECT * FROM mascota WHERE documento = '".$_SESSION['documento']."'";
+    $consulta_mas = "SELECT * FROM mascota, control WHERE documento = '".$_SESSION['documento']."' and mascota.codigo = control.codigo";
     $querymas = mysqli_query($conexion,$consulta_mas);
     $filamas = mysqli_fetch_assoc($querymas);
     

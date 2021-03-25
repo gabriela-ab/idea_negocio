@@ -48,14 +48,14 @@ require_once('../conexion/conexion.php');
                     ?>
                 </select>
 
-                <input type="hidden" name="codigo" id="codigo" class="codigo" value="<?php echo($fila_codigo['codigo'])?>">
+                <input type="hidden" name="codigo" id="codigo" class="codigo" value="<?php echo($fila['codigo'])?>">
 
                 <input type="text" name="descripcion" id="descripcion" placeholder="Descripcion del control" required>
                 <input type="text" name="peso" id="peso" placeholder="Digite el peso en kg" required>
                 <input type="text" name="altura" id="altura" placeholder="Digite la altura en cm" required>
                 <input type="text" name="observaciones" id="observaciones" placeholder="Observaciones del control" required>
 
-                <input type="submit" clas="enviar" name="enviar" id="enviar" value="Enviar">
+                <input type="submit" class="enviar" name="enviar" id="enviar" value="Enviar">
             </div>
             
         </form>
