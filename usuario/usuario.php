@@ -31,7 +31,7 @@ require_once('../conexion/conexion.php');
             <ul>
                 <li><a href="usuario.php">INICIO</a></li>
                 <li><a href="mascota.php">REGISTRAR MASCOTA</a></li>
-                <li><a href="">COMPRAR MEDICAMENTO</a></li>
+                <li><a href="compra.php">COMPRAR MEDICAMENTO</a></li>
                 <li><a href=""></a></li>
                 <li><a href="../php/salir.php"><img width="40px" height="50px" src="../img/cerrar-sesion.png" alt=""></a></li>
             </ul>                
