@@ -39,7 +39,7 @@ require_once('../conexion/conexion.php');
     </div>
 
    <h1 class="saludo">BIENVENIDO</h1>
-   <p><a href="alerta.php">.</a></p>
+   <p><a href="alerta.php">control</a></p>
   
 </body>
 </html>
