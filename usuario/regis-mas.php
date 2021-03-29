@@ -19,7 +19,7 @@
             echo '<script> window.location="usuario.php"</script>';
         }
         else{
-            $registrar = "INSERT INTO mascota (codigo, nombre, id_tip_mascota, raza, edad, id_genero, documento)
+            $registrar = "INSERT INTO mascota (codigo, nombre, id_tip_mascota, id_raza, id_tiempo, id_genero, documento)
             VALUES('$codigo','$nombre','$tipo_mascota','$raza','$edad','$genero','$documento')";
             $validar = mysqli_query($conexion,$registrar);
             echo "<script> alert('Se guardaron los datos exitosamente.')</script>";

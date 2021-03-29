@@ -21,6 +21,19 @@ require_once('../conexion/conexion.php');
     $filage = mysqli_fetch_assoc($queryge);
 ?>
 
+<?php
+
+$sqlra = "SELECT * FROM raza";
+$queryra = mysqli_query($conexion,$sqlra);
+$filara = mysqli_fetch_assoc($queryra);
+?>
+
+<?php
+
+$sqltiem = "SELECT * FROM tiempo";
+$querytiem = mysqli_query($conexion,$sqltiem);
+$filatiem = mysqli_fetch_assoc($querytiem);
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -39,7 +52,9 @@ require_once('../conexion/conexion.php');
             <h1 class="titulo">Registrar mascota</h1>
             <div class="regis">
                 <input type="hidden" name="codigo" id="codigo" placeholder="Digita codigo mascota" required>
+                
                 <input type="text" name="nombre" id="nombre" placeholder="Digita el nombre" required>
+                
                 <select class="mascota" name="tipo_mas" id="tipo_mas" required>
                     <option value="">Elije tipo mascota</option>
                     <?php
@@ -52,8 +67,33 @@ require_once('../conexion/conexion.php');
                     endforeach;
                     ?>
                 </select>
-                <input type="text" name="raza" id="raza" placeholder="Digita la raza" required>
-                <input type="text" name="edad" id="edad" placeholder="Digita la edad" required>
+
+                <select name="raza" id="raza" required>
+                    <option value="">Elije la raza</option>
+                    <?php
+
+                        foreach ($queryra as $raza) : ?>
+
+                    <option value="<?php echo $raza['id_raza'] ?> ">
+                        <?php echo $raza['non_raza'] ?></option>
+                    <?php
+                    endforeach;
+                    ?>
+                </select>
+
+                <select name="edad" id="edad" required>
+                    <option value="">Elije edad</option>
+                    <?php
+
+                        foreach ($querytiem as $edad) : ?>
+
+                    <option value="<?php echo $edad['id_tiempo'] ?> ">
+                        <?php echo $edad['nom_tiempo'] ?></option>
+                    <?php
+                    endforeach;
+                    ?>
+                </select>
+
                 <select name="genero" id="genero" required>
                     <option value="">Elije genero</option>
                     <?php
@@ -66,7 +106,9 @@ require_once('../conexion/conexion.php');
                     endforeach;
                     ?>
                 </select>
+
                 <input type="hidden" name="documento" id="documento" class="documento" value="<?php echo($filausu['documento'])?>">
+                
                 <input type="submit" class="enviar" name="registrar" id="registrar" value="Registrar">
                 
             </div>
