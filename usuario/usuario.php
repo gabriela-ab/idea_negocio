@@ -32,14 +32,13 @@ require_once('../conexion/conexion.php');
                 <li><a href="usuario.php">INICIO</a></li>
                 <li><a href="mascota.php">REGISTRAR MASCOTA</a></li>
                 <li><a href="compra.php">COMPRAR PRODUCTOS</a></li>
-                <li><a href=""></a></li>
+                <li><a href="alerta.php">CONTROL</a></li>
                 <li><a href="../php/salir.php"><img width="40px" height="50px" src="../img/cerrar-sesion.png" alt=""></a></li>
             </ul>                
         </div>
     </div>
 
    <h1 class="saludo">BIENVENIDO</h1>
-   <p><a href="alerta.php">control</a></p>
   
 </body>
 </html>

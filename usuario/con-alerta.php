@@ -4,19 +4,17 @@ require_once('../conexion/conexion.php');
 
 if($_POST["comprobar"]){
 
-    $documento = $_POST["documento"];
     $codigo = $_POST["codigo"];
 
-    $pregunta = "SELECT * FROM mascota where codigo='$codigo'";
-    $query1 = mysqli_query($conexion,$pregunta);
-    $fila1 = mysqli_fetch_assoc($query1);
-
-
-    $consulta = "SELECT * FROM control, tipo_control, mascota WHERE control.id_tip_control = tipo_control.id_tip_control and control.codigo = mascota.codigo";
+    $consulta = "SELECT * FROM control WHERE codigo='$codigo'";
     $query = mysqli_query($conexion,$consulta);
     $fila = mysqli_fetch_assoc($query);
 
     if($fila){
+
+        $consulta = "SELECT * FROM control, tipo_control, mascota WHERE control.id_tip_control = tipo_control.id_tip_control and control.codigo = mascota.codigo";
+        $query = mysqli_query($conexion,$consulta);
+        $fila = mysqli_fetch_assoc($query);
         echo '<p>' ."Codigo: ". $fila["id_control"] .'</p>';
         echo '<p>' ."Tipo control: ". $fila["tipo_control"] .'</p>';
         echo '<p>' ."Nombre de mascota: ". $fila["nombre"] .'</p>';
@@ -30,7 +28,7 @@ if($_POST["comprobar"]){
     }
     else{
         echo "<script> alert('Aun no se ha realizado el control a tu mascota.')</script>";
-        echo '<script> window.location="consult.php" </script>';
+        echo '<script> window.location="usuario.php" </script>';
     }
 
 }

@@ -15,6 +15,12 @@ require_once('../conexion/conexion.php');
     $filadoc = mysqli_fetch_assoc($querydoc);
     
 ?>
+<?php 
+    $consulta_masco = "SELECT * FROM mascota WHERE documento = '".$_SESSION['documento']."'";
+    $querymasco = mysqli_query($conexion,$consulta_masco);
+    $filamasco = mysqli_fetch_assoc($querymasco);
+    
+?>
 
 <?php 
     $consulta_mas = "SELECT * FROM mascota, control WHERE documento = '".$_SESSION['documento']."' and mascota.codigo = control.codigo";
@@ -36,19 +42,19 @@ require_once('../conexion/conexion.php');
     <div class="formulario">
         <form action="con-alerta.php" method="POST">
             <h1>Ver control de mascota</h1>
-            <select name="documento" id="documento" required>
+            <select name="codigo" id="codigo" required>
                 <option value="">Elije</option>
                 <?php
 
-                    foreach ($querydoc as $documento) : ?>
+                    foreach ($querymasco as $mascota) : ?>
 
-                <option value="<?php echo $documento['documento'] ?> ">
-                    <?php echo $documento['nombres'] ?></option>
+                <option value="<?php echo $mascota['codigo'] ?> ">
+                    <?php echo $mascota['nombre'] ?></option>
                 <?php
                     endforeach;
                 ?>
             </select>
-            <input type="hidden" name="codigo" id="codigo" value="<?php echo($filamas['codigo'])?>">
+           
             <input type="submit" class="enviar" name="comprobar" value="Ver control">
             
         </form>
