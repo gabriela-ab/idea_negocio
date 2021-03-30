@@ -66,6 +66,16 @@ select{
     background-color: rgba(49, 38, 37, 0.486);
     color: rgb(255, 253, 250); 
 }
+textarea{
+    margin-left: 25px;
+    font-size: 15px;
+    width: 190px;
+    padding: 8px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: rgba(49, 38, 37, 0.486);
+    color: rgb(255, 253, 250); 
+}
 .mascota{
     margin-right: 20px;
 }

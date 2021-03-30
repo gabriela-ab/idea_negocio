@@ -1,8 +1,8 @@
 <?php
 require_once('../conexion/conexion.php');
 
-    $sql="SELECT * FROM mascota, tipo_mascota, genero, usuario WHERE mascota.id_tip_mascota = tipo_mascota.id_tip_mascota and 
-    mascota.id_genero = genero.id_genero and mascota.documento = usuario.documento";
+    $sql="SELECT * FROM mascota, tipo_mascota, genero, raza, tiempo, usuario WHERE mascota.id_tip_mascota = tipo_mascota.id_tip_mascota and 
+    mascota.id_genero = genero.id_genero and mascota.documento = usuario.documento and mascota.id_raza = raza.id_raza and mascota.id_tiempo = tiempo.id_tiempo";
     $query = mysqli_query($conexion,$sql);
     $fila = mysqli_fetch_assoc($query);
 
@@ -37,8 +37,8 @@ require_once('../conexion/conexion.php');
                     echo '<td>' . $contenido["codigo"] .'</td>';
                     echo '<td>' . $contenido["nombre"] .'</td>';
                     echo '<td>' . $contenido["tipo_mascota"] .'</td>';
-                    echo '<td>' . $contenido["raza"] .'</td>';
-                    echo '<td>' . $contenido["edad"] .'</td>';
+                    echo '<td>' . $contenido["non_raza"] .'</td>';
+                    echo '<td>' . $contenido["nom_tiempo"] .'</td>';
                     echo '<td>' . $contenido["genero"] .'</td>';
                     echo '<td>' . $contenido["nombres"] .'</td>';
                     echo '<td>' . "<a href='control.php?codigo=$codigo'>" . "<p> <b> Realizar control </b> </p>" . '</a>' . '</td>';

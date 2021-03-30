@@ -34,7 +34,9 @@ require_once('../conexion/conexion.php');
             <img class="logotipo " src="../img/veterinario.png" alt="">
             <h1 class="titulo">Realizar control a la mascota</h1>
             <div class="regis">
+                
                 <input type="hidden" name="cod_control" id="cod_control" placeholder="Digita codigo control" required>
+                
                 <select name="tipo_control" id="tipo_control" required>
                     <option value="">Elije tipo de control</option>
                     <?php
@@ -49,11 +51,13 @@ require_once('../conexion/conexion.php');
                 </select>
 
                 <input type="hidden" name="codigo" id="codigo" class="codigo" value="<?php echo($fila['codigo'])?>">
-
-                <input type="text" name="descripcion" id="descripcion" placeholder="Descripcion del control" required>
+                
+                <textarea name="descripcion" id="descripcion" placeholder="Descripcion del control" required></textarea>
+                
                 <input type="text" name="peso" id="peso" placeholder="Digite el peso en kg" required>
                 <input type="text" name="altura" id="altura" placeholder="Digite la altura en cm" required>
-                <input type="text" name="observaciones" id="observaciones" placeholder="Observaciones del control" required>
+                
+                <textarea name="observaciones" id="observaciones" placeholder="Observaciones del control" required></textarea>
 
                 <input type="submit" class="enviar" name="enviar" id="enviar" value="Enviar">
             </div>
