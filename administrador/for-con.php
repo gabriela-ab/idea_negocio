@@ -23,7 +23,7 @@ if(isset($_POST["enviar"])){
         echo '<script> window.location="../regis.php"</script>';
     }
     else{
-        $registrar = "INSERT INTO control (id_control, id_tip_control, codigo, descripcion, peso, altura, proxima_fecha, observaciones)
+        $registrar = "INSERT INTO control (id_control, id_tip_control, codigo, descripcion, id_peso, id_altura, proxima_fecha, observaciones)
         VALUES('$id_control','$control','$codigo','$descripcion','$peso','$altura','$limite_spa','$observaciones')";
         $validar = mysqli_query($conexion,$registrar);
         echo "<script> alert('Se guardaron los datos exitosamente.')</script>";

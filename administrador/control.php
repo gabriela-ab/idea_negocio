@@ -19,6 +19,18 @@ require_once('../conexion/conexion.php');
     $filacon = mysqli_fetch_assoc($querycon);
 ?>
 
+<?php
+    $sqlpeso = "SELECT * FROM peso";
+    $querypeso = mysqli_query($conexion,$sqlpeso);
+    $filapeso = mysqli_fetch_assoc($querypeso);
+?>
+
+<?php
+    $sqlalt = "SELECT * FROM altura";
+    $queryalt = mysqli_query($conexion,$sqlalt);
+    $filaalt = mysqli_fetch_assoc($queryalt);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,8 +66,31 @@ require_once('../conexion/conexion.php');
                 
                 <textarea name="descripcion" id="descripcion" placeholder="Descripcion del control" required></textarea>
                 
-                <input type="text" name="peso" id="peso" placeholder="Digite el peso en kg" required>
-                <input type="text" name="altura" id="altura" placeholder="Digite la altura en cm" required>
+                <select name="peso" id="peso" required>
+                    <option value="">Elije el peso</option>
+                    <?php
+
+                        foreach ($querypeso as $peso) : ?>
+
+                    <option value="<?php echo $peso['id_peso'] ?> ">
+                        <?php echo $peso['tipo_peso'] ?></option>
+                    <?php
+                    endforeach;
+                    ?>
+                </select>
+
+                <select name="altura" id="altura" required>
+                    <option value="">Elije la altura</option>
+                    <?php
+
+                        foreach ($queryalt as $altura) : ?>
+
+                    <option value="<?php echo $altura['id_altura'] ?> ">
+                        <?php echo $altura['tipo_altura'] ?></option>
+                    <?php
+                    endforeach;
+                    ?>
+                </select>
                 
                 <textarea name="observaciones" id="observaciones" placeholder="Observaciones del control" required></textarea>
 
