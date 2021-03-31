@@ -34,8 +34,10 @@ $filacant = mysqli_fetch_assoc($querycant);
 </head>
 <body>
     <div class="formulario">
-        <form action="" method="POST" autocomplete="off">
+        <form action="for-produc.php" method="POST" autocomplete="off">
             <h1 class="titulo">Registrar producto</h1>
+            <input type="hidden" name="codigo_produc" id="codigo_produc" placeholder="Digita codigo mascota" required>
+            
             <input type="text" name="producto" id="producto" placeholder="Digita nombre de producto" required>
             
             <input type="number" name="precio" id="precio" placeholder="Digita el precio" required>
