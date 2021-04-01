@@ -21,10 +21,10 @@ form{
     background: rgba(0, 0, 0, .5);
     width: 500px;
     border-radius: 10px;
-    height: 500px;
+    height: 470px;
 }
 .regis{
-    margin-top: 30px;
+    margin-top: 10px;
    margin: 15px;
 
 }
@@ -38,14 +38,14 @@ form{
 }
 h1{
     margin-left: 35px;
-    margin-top: 20%;
+    margin-top: 15%;
     text-align: center;
     color: #fff;
     font-size: 30px;
     font-family: 'Times New Roman', Times, serif;
 }
 input{
-    margin: 20px;
+    margin: 23px;
     padding: 8px;
     margin-top: 20px;
     border-radius: 10px;
@@ -53,7 +53,7 @@ input{
     color: rgb(255, 253, 250); 
 }
 .docu{
-    margin-left: 35px;
+    margin-left: 40px;
 }
 select{
     
@@ -78,10 +78,10 @@ select{
     font-size: 15px;
     cursor: pointer;
     color: #fff;
-    background: #006eff5e;
+    background: #0c5303;
 }
 .enviar:hover{
     transform: translatey(1px);
-    background: #543799;
+    background: #0483d8e5;
     color: #000;
 }

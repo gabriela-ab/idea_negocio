@@ -49,7 +49,7 @@ require_once('../conexion/conexion.php');
                 
                 <input type="hidden" name="cod_control" id="cod_control" placeholder="Digita codigo control" required>
                 
-                <select name="tipo_control" id="tipo_control" required>
+                <select class="controles" name="tipo_control" id="tipo_control" required>
                     <option value="">Elije tipo de control</option>
                     <?php
 
@@ -79,7 +79,7 @@ require_once('../conexion/conexion.php');
                     ?>
                 </select>
 
-                <select name="altura" id="altura" required>
+                <select name="altura" id="altura" class="altura" required>
                     <option value="">Elije la altura</option>
                     <?php
 

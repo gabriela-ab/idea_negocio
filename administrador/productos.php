@@ -55,7 +55,7 @@ $filacant = mysqli_fetch_assoc($querycant);
                 ?>
             </select>
 
-            <select name="tipo_producto" id="tipo_producto" required>
+            <select name="tipo_producto" id="tipo_producto" class="docu" required>
                 <option value="">Elije tipo de producto</option>
                 <?php
 

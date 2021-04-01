@@ -81,7 +81,7 @@ $filatiem = mysqli_fetch_assoc($querytiem);
                     ?>
                 </select>
 
-                <select name="edad" id="edad" required>
+                <select name="edad" id="edad" class="edad" required>
                     <option value="">Elije edad</option>
                     <?php
 
