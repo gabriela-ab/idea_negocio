@@ -65,7 +65,7 @@ require_once('../conexion/conexion.php');
     
     if($filamasco){
         echo "<h2>la proxima fecha del control es: $limite_spa</h2>";
-        echo "<h2>el dia $dia, debes denir para una revision</h2>";
+        echo "<h2>el dia $dia, debes venir para una revision</h2>";
         echo '<hr />';
 
     }
