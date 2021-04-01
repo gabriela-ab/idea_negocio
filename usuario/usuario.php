@@ -61,25 +61,27 @@ require_once('../conexion/conexion.php');
     $ahora = time();
     $limite = strtotime("+10 day", $ahora);
     $limite_spa = date("d-m-Y  H:i:s", $limite);
-    $dia = date("d",$limite);
+    $dia = date("d","m",$limite);
+    $r = $dia -$ahora;
     
+
     if($filamasco){
         echo "<h2>la proxima fecha del control es: $limite_spa</h2>";
         echo "<h2>el dia $dia, debes venir para una revision</h2>";
         echo '<hr />';
-
+        echo '<hr />';
+        
+       
+        
     }
     else{
         echo 'no has registrado nada :(';
 
-    } 
+    }
     
     
 
-    //  if($ahora >= $dia){
-    //     echo "<script> alert('$limite_spa  !! REALIZAR CONTROL ¡¡    ')</script>";
-       
-
+  
    
 
 
