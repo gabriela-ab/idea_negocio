@@ -15,8 +15,8 @@ body{
     box-sizing: border-box;
 }
 form{
-    width: 350px;
-    border-radius: 10px;
+    width: 380px;
+    border-radius: 15px;
     height: 350px;
     background: rgba(0, 0, 0, .5);
 }
@@ -47,7 +47,7 @@ select{
     width: 80%;
     height: 40px;
     padding: 5px;
-    margin-left: 20px;
+    margin-left: 40px;
     margin-bottom: 30px;
     margin-top: 25px;
     border-radius: 5px;
@@ -57,7 +57,7 @@ select{
 }
 
 .enviar{
-    margin-left: 110px;
+    margin-left: 130px;
     padding: 8px;
     margin-top: 25px;
     border-radius: 10px;
@@ -65,10 +65,10 @@ select{
     font-size: 15px;
     cursor: pointer;
     color: #fff;
-    background: #006eff5e;
+    background: #d60b2de7;
 }
 .enviar:hover{
     transform: translatey(1px);
-    background: #543799;
+    background: #0b75d8b9;
     color: #000;
 }

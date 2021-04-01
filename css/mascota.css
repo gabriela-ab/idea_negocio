@@ -21,7 +21,7 @@ form{
     background: rgba(0, 0, 0, .5);
     width: 500px;
     border-radius: 10px;
-    height: 500px;
+    height: 470px;
 }
 .regis{
     margin-top: 30px;
@@ -33,12 +33,13 @@ form{
     width: 100px;
     height: 100px;
     position: absolute;
-    top: 20px;
+    top: 25px;
     left: calc(50% - 50px);
 }
+
 h1{
     margin-left: 35px;
-    margin-top: 20%;
+    margin-top: 25%;
     text-align: center;
     color: #fff;
     font-size: 30px;
@@ -52,12 +53,12 @@ input{
     background-color: rgba(49, 38, 37, 0.486);
     color: rgb(255, 253, 250); 
 }
-.docu{
-    margin-left: 35px;
+.edad{
+    margin-left: 40px;
 }
 select{
     
-    margin-left: 25px;
+    margin-left: 20px;
     font-size: 15px;
     width: 190px;
     padding: 8px;
@@ -78,10 +79,10 @@ select{
     font-size: 15px;
     cursor: pointer;
     color: #fff;
-    background: #006eff5e;
+    background: #d60b2de7;
 }
 .enviar:hover{
     transform: translatey(1px);
-    background: #543799;
+    background: #0b75d8b9;
     color: #000;
 }

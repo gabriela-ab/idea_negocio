@@ -25,7 +25,7 @@ form{
 }
 .regis{
     margin-top: 30px;
-   margin: 15px;
+    margin: 15px;
 
 }
 .formulario img{
@@ -52,8 +52,9 @@ input{
     background-color: rgba(49, 38, 37, 0.486);
     color: rgb(255, 253, 250); 
 }
-.docu{
-    margin-left: 35px;
+.controles{
+    margin-top: 20px;
+    
 }
 select{
     
@@ -61,7 +62,7 @@ select{
     font-size: 15px;
     width: 190px;
     padding: 8px;
-    margin-top: 20px;
+    margin-top: 40px;
     border-radius: 10px;
     background-color: rgba(49, 38, 37, 0.486);
     color: rgb(255, 253, 250); 
@@ -69,15 +70,16 @@ select{
 textarea{
     margin-left: 25px;
     font-size: 15px;
-    width: 190px;
+    width: 170px;
+    height: 30px;
     padding: 8px;
-    margin-top: 20px;
+    margin-top: 40px;
     border-radius: 10px;
     background-color: rgba(49, 38, 37, 0.486);
     color: rgb(255, 253, 250); 
 }
-.mascota{
-    margin-right: 20px;
+.altura{
+    margin-left: 20px;
 }
 .enviar{
     margin-left: 55px;

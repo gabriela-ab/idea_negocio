@@ -33,6 +33,7 @@ require_once('../conexion/conexion.php');
                 <li><a href="administrador.php"></a>INICIO</a></li>
                 <li><a href="mascotas.php">MASCOTAS</a></li>
                 <li><a href="buscador2.php">USUARIOS</a></li>
+                <li><a href="productos.php">REGISTRAR PRODUCTO</a></li>
                 <li><a href="inventario.php">INVENTARIO</a></li>
                 <li><a href="../php/salir.php"><img witdh="40px" height="50px" src="../img/cerrar-sesion.png" alt=""></a></li>
             </ul>
