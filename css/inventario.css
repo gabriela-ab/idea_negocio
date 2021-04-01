@@ -1,0 +1,62 @@
+html{
+    box-sizing: border-box;
+    font-size: 15px;
+}
+*, 
+*::after , 
+*::before{
+    box-sizing: inherit;
+}
+body{
+    background: url(../img/color.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.productos{
+    float: left;
+    padding: 20px;
+    margin: 20px;
+    border: thin solid #000000;
+    border-collapse: collapse;
+    width: 50%;
+    text-align: center;
+}
+.compras{
+    float: right;
+    padding: 20px;
+    margin: 20px;
+    border: thin solid #000000;
+    border-collapse: collapse;
+    width: 50%;
+    text-align: center;
+}
+.tabla td{
+    font-family: 'Times New Roman', Times, serif;
+    border: thin solid #000000;
+    margin: 50px;
+    width: auto;
+    font-size: 18px;
+}
+.tabla_pro td{
+    font-family: 'Times New Roman', Times, serif;
+    border: thin solid #000000;
+    margin: 50px;
+    width: auto;
+    font-size: 18px;
+}
+.principal{
+    margin: 50px;
+    padding: 10px;
+    font-size: 40px;
+    font-weight: bold;
+}
+.titulo-pro{
+    margin-left: 80px;
+}
+.titulo-com{
+    padding-left: 180px;
+}
