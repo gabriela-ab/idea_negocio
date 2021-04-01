@@ -40,7 +40,7 @@ require_once('../conexion/conexion.php');
 
    <h1 class="saludo">BIENVENIDO</h1>
     
-   <?php
+    <?php
 
 
     $consulta_masco = "SELECT control.proxima_fecha, control.fecha FROM mascota, control WHERE documento = '".$_SESSION['documento']."' ";
@@ -60,24 +60,16 @@ require_once('../conexion/conexion.php');
     $limite_spa = date("d", $limite);
     
     $dia = date("d",$limite);
-   
-
-    // $f = $filamasco["proxima_fecha"];
-    // $p = $filamasco["fecha"];
-    // $datos = date($f, 'Y-m-d');
-    
 
 
     if($filamasco){
         echo '<h2>' ."Proxima fecha del control: ". $filamasco["proxima_fecha"] .'</h2>';
         echo "<h2>el dia $dia, debe venir para una revision</h2>";
         echo '<hr />';
+        '<br>';
 
-        echo ($f);
-        '<br>';
-        echo '<hr />';
-        echo ($p);
-        '<br>';
+
+
 
         echo "<h2>la proxima fecha del control es: $limite_spa</h2>";
         echo "<h2>el dia $dia, debes venir para una revision</h2>";
@@ -88,10 +80,13 @@ require_once('../conexion/conexion.php');
     else{
         echo 'no has registrado nada :(';
 
+
     }
     
 
 ?>
+
+    
   
 </body>
 </html>
