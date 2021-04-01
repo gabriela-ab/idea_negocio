@@ -43,6 +43,7 @@ require_once('../conexion/conexion.php');
                     echo '<td>' . $contenido["nombres"] .'</td>';
                     echo '<td>' . "<a href='control.php?codigo=$codigo'>" . "<p> <b> Realizar control </b> </p>" . '</a>' . '</td>';
                     echo "</tr>";
+                    
                 }
                 
             ?>

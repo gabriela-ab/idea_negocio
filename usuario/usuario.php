@@ -39,6 +39,39 @@ require_once('../conexion/conexion.php');
     </div>
 
    <h1 class="saludo">BIENVENIDO</h1>
+    
+   <?php
+
+$ahora = time();
+$limite = strtotime($ahora);
+
+$a = date("m",$ahora);
+$d = date("d",$ahora);
+
+
+echo "<h2 >proximo control</h2>";
+echo  "<hr /> ";
+
+
+    $ahora = time();
+
+    $limite = strtotime("+10 day", $ahora);
+    $limite_spa = date("d-m-y  H:i:s", $limite);
+   
+    $dia = date("d",$limite);
+    echo "<h1>$limite_spa</h1>";
+    echo '<hr />';
+    
+
+     if($ahora >= $dia){
+        echo "<script> alert('$limite_spa  !! REALIZAR CONTROL ¡¡    ')</script>";
+       
+
+    }else echo 'tranquilo';
+
+
+
+?>
   
 </body>
 </html>

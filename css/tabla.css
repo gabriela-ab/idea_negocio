@@ -36,6 +36,7 @@ body{
     font-size: 40px;
     font-weight: bold;
 }
+
 a{
     /* border: none; */
     text-decoration: none;
@@ -43,6 +44,7 @@ a{
     color: #d60b2de7;
     cursor: pointer;
     outline: 0;
+    
 }
 a:hover{
     color: #0b75d8b9;
