@@ -1,4 +1,7 @@
 <?php
+
+
+//extraer el dia y el mes de la fecha actual
 $ahora = time();
 $limite = strtotime($ahora);
 
@@ -11,7 +14,9 @@ echo ($a);
 echo '<hr />';
 echo ($d);
 echo '<hr />';
- 
+
+
+    //a la fecha actual sumarle 10 dias e imprimirla
     $ahora = time();
 
     $limite = strtotime("+10 day", $ahora);

@@ -43,31 +43,37 @@ require_once('../conexion/conexion.php');
    <?php
 
 
-    $consulta_masco = "SELECT * FROM mascota WHERE documento = '".$_SESSION['documento']."' ";
+    $consulta_masco = "SELECT control.proxima_fecha, control.fecha FROM mascota, control WHERE documento = '".$_SESSION['documento']."' ";
     $querymasco = mysqli_query($conexion,$consulta_masco);
     $filamasco = mysqli_fetch_assoc($querymasco);
 
-    //extraer el dia y el mes de la fecha actual
-    // $ahora = time();
-    // $limite = strtotime($ahora);
-    // $a = date("m",$ahora);
-    // $d = date("d",$ahora);
-
-
-    // echo "<h2 >proximo control</h2>";
-    // echo  "<hr /> ";
-
     //a la fecha actual sumarle 10 dias e imprimirla
     $ahora = time();
-    $limite = strtotime("+10 day", $ahora);
-    $limite_spa = date("d-m-Y  H:i:s", $limite);
-    $dia = date("d",$limite);
+    $limite = strtotime("+10 day",$ahora);
+    $limite_spa = date("d", $limite);
     
+    $dia = date("d",$limite);
+   
+
+    // $f = $filamasco["proxima_fecha"];
+    // $p = $filamasco["fecha"];
+    // $datos = date($f, 'Y-m-d');
+    
+
+
     if($filamasco){
-        echo "<h2>la proxima fecha del control es: $limite_spa</h2>";
-        echo "<h2>el dia $dia, debes denir para una revision</h2>";
+        echo '<h2>' ."Proxima fecha del control: ". $filamasco["proxima_fecha"] .'</h2>';
+        echo "<h2>el dia $dia, debe venir para una revision</h2>";
         echo '<hr />';
 
+        echo ($f);
+        '<br>';
+        echo '<hr />';
+        echo ($p);
+        '<br>';
+        echo '<hr />';
+
+        
     }
     else{
         echo 'no has registrado nada :(';
@@ -75,9 +81,6 @@ require_once('../conexion/conexion.php');
     } 
     
     
-
-    //  if($ahora >= $dia){
-    //     echo "<script> alert('$limite_spa  !! REALIZAR CONTROL ¡¡    ')</script>";
        
 
    
