@@ -81,15 +81,8 @@ require_once('../conexion/conexion.php');
 
         echo "<h2>la proxima fecha del control es: $limite_spa</h2>";
         echo "<h2>el dia $dia, debes venir para una revision</h2>";
-
-        echo '<hr />';
-
         echo '<hr />';
         
-       
-
-
-
         
     }
     else{
@@ -97,11 +90,6 @@ require_once('../conexion/conexion.php');
 
     }
     
-    
-
-   
-
-
 
 ?>
   
