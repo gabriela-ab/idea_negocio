@@ -8,6 +8,7 @@ require_once('../conexion/conexion.php');
     $_SESSION['usuario'] = $fila_admin['usuario'];
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,6 +41,9 @@ require_once('../conexion/conexion.php');
     </div>
 
    <h1 class="saludo">BIENVENIDO</h1>
-  
+   <div>
+   
+   </div>
+   
 </body>
 </html>
