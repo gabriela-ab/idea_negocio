@@ -42,32 +42,45 @@ require_once('../conexion/conexion.php');
     
    <?php
 
-$ahora = time();
-$limite = strtotime($ahora);
 
-$a = date("m",$ahora);
-$d = date("d",$ahora);
+    $consulta_masco = "SELECT * FROM mascota WHERE documento = '".$_SESSION['documento']."' ";
+    $querymasco = mysqli_query($conexion,$consulta_masco);
+    $filamasco = mysqli_fetch_assoc($querymasco);
+
+    //extraer el dia y el mes de la fecha actual
+    // $ahora = time();
+    // $limite = strtotime($ahora);
+    // $a = date("m",$ahora);
+    // $d = date("d",$ahora);
 
 
-echo "<h2 >proximo control</h2>";
-echo  "<hr /> ";
+    // echo "<h2 >proximo control</h2>";
+    // echo  "<hr /> ";
 
-
+    //a la fecha actual sumarle 10 dias e imprimirla
     $ahora = time();
-
     $limite = strtotime("+10 day", $ahora);
-    $limite_spa = date("d-m-y  H:i:s", $limite);
-   
+    $limite_spa = date("d-m-Y  H:i:s", $limite);
     $dia = date("d",$limite);
-    echo "<h1>$limite_spa</h1>";
-    echo '<hr />';
+    
+    if($filamasco){
+        echo "<h2>la proxima fecha del control es: $limite_spa</h2>";
+        echo "<h2>el dia $dia, debes denir para una revision</h2>";
+        echo '<hr />';
+
+    }
+    else{
+        echo 'no has registrado nada :(';
+
+    } 
+    
     
 
-     if($ahora >= $dia){
-        echo "<script> alert('$limite_spa  !! REALIZAR CONTROL ¡¡    ')</script>";
+    //  if($ahora >= $dia){
+    //     echo "<script> alert('$limite_spa  !! REALIZAR CONTROL ¡¡    ')</script>";
        
 
-    }else echo 'tranquilo';
+   
 
 
 
