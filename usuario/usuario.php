@@ -52,8 +52,7 @@ require_once('../conexion/conexion.php');
 
     $limite = strtotime("+10 day", $ahora);
     $limite_spa = date("d-m-Y  H:i:s", $limite);
-    $dia = date("d","m",$limite);
-    $r = $dia -$ahora;
+    $diau = date("d-m",$limite);
     
 
     $limite = strtotime("+10 day",$ahora);
@@ -64,7 +63,7 @@ require_once('../conexion/conexion.php');
 
     if($filamasco){
         echo '<h2>' ."Proxima fecha del control: ". $filamasco["proxima_fecha"] .'</h2>';
-        echo "<h2>el dia $dia, debe venir para una revision</h2>";
+        echo "<h2>el dia $diau, debe venir para una revision</h2>";
         echo '<hr />';
         '<br>';
 
