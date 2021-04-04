@@ -49,39 +49,18 @@ require_once('../conexion/conexion.php');
 
     //a la fecha actual sumarle 10 dias e imprimirla
     $ahora = time();
-
     $limite = strtotime("+10 day", $ahora);
     $limite_spa = date("d-m-Y  H:i:s", $limite);
-    $diau = date("d-m",$limite);
-    
+    $diau = date("d",$limite);
+    $diam = date("m",$limite);
 
-    $limite = strtotime("+10 day",$ahora);
-    $limite_spa = date("d", $limite);
-    
-    $dia = date("d",$limite);
 
 
     if($filamasco){
         echo '<h2>' ."Proxima fecha del control: ". $filamasco["proxima_fecha"] .'</h2>';
-        echo "<h2>el dia $diau, debe venir para una revision</h2>";
-        echo '<hr />';
-        '<br>';
-
-
-
-
-        echo "<h2>la proxima fecha del control es: $limite_spa</h2>";
-        echo "<h2>el dia $dia, debes venir para una revision</h2>";
-        echo '<hr />';
-        
-        
+        echo '<h2>' . "el dia $diau del mes $diam, debe venir para la siguiente revision del control" . '</h2>';
+       
     }
-    else{
-        echo 'no has registrado nada :(';
-
-
-    }
-    
 
 ?>
 

@@ -35,7 +35,7 @@ $consulta = "SELECT COUNT(nom_produc) FROM producto";
 </head>
 <body>
     <div class="tabla">
-        <h1 class="titulo-pro">Productos para compras</h1>
+        <h1 class="titulo-pro">Productos</h1>
         <table class="productos">
             <tr>
                 <td class="principal"><b>Producto</b></td>
